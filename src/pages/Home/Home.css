@@ -3,8 +3,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
     padding: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: #F6F6F6;
   }
+
   
   .card {
     height: 340px;
