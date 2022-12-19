@@ -1,10 +1,14 @@
 import React from 'react';
+import Card from '../../components/Card';
+import Banner from '../../components/Banner';
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div>
-  
-        </div>
+        <main className='page_home'>
+            <Banner />
+            <Card />
+        </main>
     );
 };
 
