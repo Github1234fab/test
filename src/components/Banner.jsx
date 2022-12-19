@@ -1,10 +1,10 @@
 import React from 'react';
-import Ocean from '../assets/banner.jpg';
+import Ocean from '../assets/IMG_banner.jpg';
 
 const Banner = () => {
     return (
-        <div className = "Banner">
-            <img src = {Ocean} alt="" />
+        <div className = "banner">
+            <img className = "banner_img" src = {Ocean} alt="Côte océan" />
         </div>
     );
 };

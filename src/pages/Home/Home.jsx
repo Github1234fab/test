@@ -5,7 +5,7 @@ import "./Home.css";
 
 const Home = () => {
     return (
-        <main className='page_home'>
+        <main>
             <Banner />
             <Card />
         </main>

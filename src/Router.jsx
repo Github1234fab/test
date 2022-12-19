@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Logement from "./pages/Logement/Logement";
 import Erreur from "./pages/Erreur/Erreur";
+import Footer from "./components/Footer/Footer";
 
 function router (){
 
@@ -16,6 +17,7 @@ function router (){
                 <Route path="/logements" element={<Logement />}></Route>   
                 <Route path="*" element={<Erreur/>}></Route>   
               </Routes>
+              <Footer />
             </Router>
           );
 
