@@ -19,13 +19,13 @@ import { Link } from "react-router-dom";
                         return (
                             <div className='card' key={id} >
                                 <div className='card_visuel'>
-                                    <Link to={"logement/" + id} className="card_link">
+                                    <Link to={"logements/" + id} className="card_link">
                                         {/* //image */}
                                         {/* title */}
                                         {/* overlay qui englobe l'image et le titre */}
-                                        <div className='card_overlay'>
+                                        {/* <div className='card_overlay'> */}
                                             <img className='card_cover' src={cover} alt={title} />
-                                        </div>
+                                        {/* </div> */}
                                         <div className='card_title'>
                                             <h2>{title}</h2>
                                         </div>
