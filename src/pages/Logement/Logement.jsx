@@ -14,7 +14,9 @@ function Logement() {
     const { id } = useParams();
     const logement = DataLogements.find((logement) => logement.id === id);
     const { pictures, description, equipments } = logement;
-
+    const listeEquipments = equipments.map((equipment, index)=>{
+        return <li key={index}>{equipment}</li>
+    })
 
     return (
         <>
@@ -29,7 +31,7 @@ function Logement() {
                     <Collapse
                         className="equipment"
                         titre="Équipements"
-                        description={equipments}
+                        description={listeEquipments}
                     />
                 </div>
             </div>
