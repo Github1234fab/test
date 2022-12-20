@@ -2,13 +2,31 @@ import React from 'react';
 // import Banner from '../../components/Banner';
 // import Tag from '../../components/Tag';
 import "./Logement.css";
+import Carrousel from '../../components/Carrousel';
+import { useParams } from 'react-router-dom';
+import DataLogements from "../../data/data.json";
+import Collapse from '../../components/Collapse';
 
 
-const Logement = () => {
+function Logement() {
+    // je récupère l'id du logement concerné que je vais comparer avec l'id de la bdd. 
+    // Si je le trouve je le récupère.
+
+    const { id } = useParams();
+    const logement = DataLogements.find((logement) => logement.id === id);
+    const { pictures, description, equipments } = logement;
+
+
     return (
-        <div>
-            LOGEMENT
-        </div>
+        <>
+            <div className='container_logement'>
+                <Carrousel images={pictures} />
+                <div className='collapses'>
+                    <Collapse className="description" title="Description" description={description} />
+                    <Collapse className="equipements" title="Equipements" description={equipments} />
+                </div>
+            </div>
+        </>
     );
 };
 

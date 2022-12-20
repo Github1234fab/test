@@ -7,11 +7,13 @@ import { NavLink } from 'react-router-dom';
 function Header () {
     return (
         <div className = 'header'>
+            <nav>
             <img className = 'Logo' src={Logo} alt="logo de Kasa" />
             <NavLink className = 'header_menu'>
                 <Link to = "/" className='header_liens'>Accueil</Link>
                 <Link to= "/a_propos" className='header_liens'>À propos</Link>
             </NavLink>
+            </nav>
             </div>
       
     );

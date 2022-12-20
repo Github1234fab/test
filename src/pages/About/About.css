@@ -6,15 +6,8 @@
     border-radius: 25px;
   }
   
-  .banner_visuel{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  
   .banner_img {
     width: 100%;
-    position: relative;
     border-radius: 25px;
   }
   

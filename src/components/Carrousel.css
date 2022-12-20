@@ -1,0 +1,22 @@
+.carrousel_image{
+    position: relative;
+    
+}
+
+
+.carrousel_arrowLeft{
+    height: 79.2px;
+    position: absolute;
+    cursor: pointer;
+    left: 13px;
+    top: 44%;
+}
+
+.carrousel_arrowRight{
+    height: 79.2px;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 44%;
+}
+/* image position relative et les arrows en absolute */
