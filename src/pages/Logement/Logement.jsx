@@ -1,5 +1,4 @@
 import React from 'react';
-// import Banner from '../../components/Banner';
 // import Tag from '../../components/Tag';
 import "./Logement.css";
 import Carrousel from '../../components/Carrousel';
@@ -21,9 +20,17 @@ function Logement() {
         <>
             <div className='container_logement'>
                 <Carrousel images={pictures} />
-                <div className='collapses'>
-                    <Collapse className="description" title="Description" description={description} />
-                    <Collapse className="equipements" title="Equipements" description={equipments} />
+                <div className="product_equipments">
+                    <Collapse
+                        className="description"
+                        titre="Description"
+                        description={description}
+                    />
+                    <Collapse
+                        className="equipment"
+                        titre="Équipements"
+                        description={equipments}
+                    />
                 </div>
             </div>
         </>
