@@ -26,9 +26,9 @@ import { Link } from "react-router-dom";
                                         {/* <div className='card_overlay'> */}
                                             <img className='card_cover' src={cover} alt={title} />
                                         {/* </div> */}
-                                        <div className='card_title'>
-                                            <h2>{title}</h2>
-                                        </div>
+                                        {/* <div className='card_title'> */}
+                                            <h2 className="card_title">{title}</h2>
+                                        {/* </div> */}
                                     </Link>
                                 </div>
                             </div>
