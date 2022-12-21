@@ -1,12 +1,32 @@
 .banner2 {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 40px;
-    border-radius: 25px;
-  }
-  
-  .banner_img {
-    width: 100%;
-    border-radius: 25px;
-  }
-  
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+  border-radius: 25px;
+}
+
+.banner_img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* .about_collapses {
+  margin-right: 100px;
+  margin-left: 100px;
+}  */
+
+.about_anyCollapse {
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: baseline;
+}
+
+.collapse{
+ width: 100%;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+

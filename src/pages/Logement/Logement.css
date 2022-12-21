@@ -92,3 +92,7 @@
 .collapse {
   width: 50%;
 }
+
+#collapse-description{
+  border: solid blue 4px;
+}
