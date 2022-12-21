@@ -1,6 +1,41 @@
-.collapse_header{
-    height: 52px;
-    background-color: #FF6060;
-    border-radius: 10px;
-    width: 100%;
+.collapse_header {
+  height: 52px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse_title {
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.collapse_arrow {
+  margin-right: 10px;
+  height: 26.4px;
+  margin-top: 10px;
+}
+
+#collapse-Description.collapse {
+  background-color: #f6f6f6;
+}
+
+#collapse-Équipements.collapse {
+  background-color: #f6f6f6;
+}
+
+.collapse_description {
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 25px;
+  margin-top: 20px;
 }

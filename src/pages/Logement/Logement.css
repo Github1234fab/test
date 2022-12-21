@@ -1,129 +1,94 @@
-  .container_logement{
-    border: solid red 2px;
-    margin-right: 100px;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-  }
+.container_logement {
+  border: solid red 2px;
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
 
+.logement_tag {
+  display: flex;
+  margin-bottom: 10px;
+}
 
-  .logement_tag{
-    display: flex;
-    margin-bottom: 10px;
-  }
+.carrousel_image {
+  overflow: hidden;
+  height: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
 
-  .carrousel_image{
-    overflow: hidden;
-    height: 415px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-  }
+.logement_informations {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .logement_informations{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .logement_infoGeneral{
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-  }
-.logement_title{
+.logement_infoGeneral {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.logement_title {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 36px;
-  color: #FF6060;
+  color: #ff6060;
   margin: 0px;
   margin-top: 15px;
 }
 
-.logement_location{
+.logement_location {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 18px;
-  color: #FF6060;
+  color: #ff6060;
   margin: 0px;
 }
 
-.logement_tag{
+.logement_tag {
   display: flex;
-  margin-top: 30px
+  margin-top: 30px;
   /* margin-top: 30px; */
 }
 
-.tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  width: 115px;
-  background-color: #FF6060;
-  border-radius: 10px;
-  position: relative;
-}
-
-
-.tag_txt {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 14px;
-  color: #FFFFFF;
-  position: absolute;
-}
-
-.contact{
+.contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.contact_identity{
+.contact_identity {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 18px;
-  color:#FF6060;
+  color: #ff6060;
   margin-right: 5px;
   margin-top: 15px;
 }
 
-.contact_firstName{
-height: 5px;
-}
-.contact.lastName{
+.contact_firstName {
   height: 5px;
 }
-.contact_profilPicture{
-  clip-path:ellipse(50% 50%);
+.contact.lastName {
+  height: 5px;
+}
+.contact_profilPicture {
+  clip-path: ellipse(50% 50%);
   width: 64px;
   height: 64px;
- margin-top: 15px;
+  margin-top: 15px;
 }
 
-.logement_equipments{
+.logement_equipments {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  gap: 50px;
+  margin-bottom: 20px;
 }
 
-.description{
-width: 50%;
-}
-
-.equipments{
+.collapse {
   width: 50%;
-  
 }
-
-
-
-
-
-
-
-
-
-

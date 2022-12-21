@@ -1,3 +1,23 @@
-.tag{
-    margin-right: 10px;
+
+
+.tag_container{
+display: flex;
 }
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    background-color: #ff6060;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .tag_txt {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px;
+  }

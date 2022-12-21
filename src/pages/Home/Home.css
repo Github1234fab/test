@@ -29,8 +29,6 @@
 
 .card_link {
   text-decoration: none;
-
-
 }
 
 .card_cover {
@@ -52,9 +50,7 @@
   position: absolute;
 }
 
-
 /* //BANNER */
-
 
 .banner {
   margin-left: 100px;
@@ -64,10 +60,10 @@
   border-radius: 25px;
 }
 
-.banner_visuel{
-display: flex;
-align-items: center;
-justify-content: center;
+.banner_visuel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner_img {
@@ -85,38 +81,35 @@ justify-content: center;
   font-size: 48px;
 }
 
-
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 /* MEDIA QUERIES SMARTPHONE */
 @media only screen and (min-width: 1px) and (max-width: 767px) {
-
-    .banner_txt {
-        text-align: center;
-        position: absolute;
-        color: #ffffff;
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 24px;
-      }
-
-      .cards {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-around;
-        
-        padding: 10px;
-        margin-right: 100px;
-        margin-left: 100px;
-        margin-top: 40px;
-        background-color: #f6f6f6;
-        border-radius: 10px;
-      }
-      .card {
-        width: 500px;
-        height: 500px;
-        border-radius: 10px;
-      }
-  
+  .banner_txt {
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
   }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+    padding: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+  }
+  .card {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+  }
+}
