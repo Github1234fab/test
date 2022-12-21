@@ -12,10 +12,11 @@
   text-decoration: none;
   padding: 5px;
   font-family: Montserrat;
-  font-weight: 500px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
-.nav_link active{
+.active{
   text-decoration: underline;
 }
 

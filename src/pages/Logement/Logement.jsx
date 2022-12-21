@@ -7,6 +7,7 @@ import DataLogements from "../../data/data.json";
 import Collapse from '../../components/Collapse';
 import Tag from '../../components/Tag/Tag';
 import Contact from '../../components/Contact/Contact';
+import Star from '../../components/Star/Star';
 
 
 function Logement() {
@@ -15,10 +16,17 @@ function Logement() {
 
     const { id } = useParams();
     const logement = DataLogements.find((logement) => logement.id === id);
-    const { pictures, description, equipments, title, location, tags, host } = logement;
+    const { pictures, description, equipments, title, location, tags, host, rating } = logement;
     const listeEquipments = equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>
     })
+    // Je construis un tableau "stars" qui va de 1 à 5, sur lequel je vais itérer pour fabriquer les étoiles 
+    // à l'aide du composant Star. Chaque chiffre du tableau sera comparé au "rating". Si le chiffre
+    // est inférieur ou égal au "rating" alors, actived est égal à true.
+    const stars = [1, 2, 3, 4, 5];
+    const listStars = stars.map((x) => (
+        <Star key={x} actived={x <= Number(rating)} />
+    ));
 
     return (
         <>
@@ -35,8 +43,8 @@ function Logement() {
                         </div>
                     </div>
                     <div className='logement_contact'>
-                        <Contact host={host}/>
-                        <div className='logement_stars'></div>
+                        <Contact host={host} />
+                        <div className='logement_stars'>{listStars}</div>
                     </div>
                 </div>
                 <div className="logement_equipments">

@@ -87,12 +87,18 @@
   justify-content: center;
   gap: 50px;
   margin-bottom: 20px;
+  display: inline-flex;
 }
 
-.collapse {
+.logement_equipments > .collapse {
   width: 50%;
 }
 
-#collapse-description{
-  border: solid blue 4px;
+.starRed {
+  color: #ff6060;
 }
+
+.starGrey {
+  color: grey;
+}
+

@@ -40,3 +40,6 @@
   margin-top: 20px;
 }
 
+.collapse_arrow.true{
+  transform: rotate(-180deg)
+}
