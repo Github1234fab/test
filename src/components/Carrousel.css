@@ -17,4 +17,13 @@
   right: 20px;
   top: 44%;
 }
+
+.gallery_count {
+  font-family: Montserrat;
+  font-weight: 500px;
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+}
 /* image position relative et les arrows en absolute */
