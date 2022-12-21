@@ -5,10 +5,9 @@
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 40px;
-  border: red 1px solid;
 }
 
-.header_liens {
+.nav_link{
   color: #ff6060;
   text-decoration: none;
   padding: 5px;
@@ -16,9 +15,10 @@
   font-weight: 500px;
 }
 
-.header_liens:hover {
+.nav_link active{
   text-decoration: underline;
 }
+
 
 
 
