@@ -2,12 +2,13 @@ import React from 'react';
 // import Tag from '../../components/Tag';
 import "./Logement.css";
 import Carrousel from '../../components/Carrousel';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import DataLogements from "../../data/data.json";
 import Collapse from '../../components/Collapse';
 import Tag from '../../components/Tag/Tag';
 import Contact from '../../components/Contact/Contact';
 import Star from '../../components/Star/Star';
+
 
 
 function Logement() {
@@ -16,6 +17,9 @@ function Logement() {
 
     const { id } = useParams();
     const logement = DataLogements.find((logement) => logement.id === id);
+    // console.log({logement});
+    if(!logement){ return <Navigate to = "/404" />};
+
     const { pictures, description, equipments, title, location, tags, host, rating } = logement;
     const listeEquipments = equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>

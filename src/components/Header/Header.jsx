@@ -10,7 +10,7 @@ function Header() {
         <NavLink to="/">
           <img src={Logo} alt="Logo Kasa Header" className="nav_img" />
         </NavLink>
-        <div>
+        <div className='header_navigation'>
           <NavLink
             className={({ isActive }) =>
               isActive ? "nav_link active" : "nav_link"
