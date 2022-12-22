@@ -7,7 +7,7 @@ import DataLogements from "../../data/data.json";
 import Collapse from '../../components/Collapse';
 import Tag from '../../components/Tag/Tag';
 import Contact from '../../components/Contact/Contact';
-import Star from '../../components/Star/Star';
+import Star from '../../components/Stars/Star';
 
 
 

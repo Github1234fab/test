@@ -114,4 +114,8 @@
     height: 500px;
     border-radius: 10px;
   }
+
+  .banner_img {
+    co: url(../../assets/banner.jpg);
+     }
 }

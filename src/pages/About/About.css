@@ -16,8 +16,8 @@
 }  */
 
 .about_anyCollapse {
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +30,43 @@
  margin-bottom: 20px;
 }
 
-.about_collapseTxt{
-  color: black;
-  font-size: 20px;
+
+#collapse-Fiabilité.collapse {
+  background-color: #f6f6f6;
 }
 
+#collapse-Respect.collapse {
+  background-color: #f6f6f6;
+} 
+
+#collapse-Service.collapse {
+  background-color: #f6f6f6;
+}
+
+#collapse-Sécurité.collapse {
+  background-color: #f6f6f6;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIAQUERIES */
+
+@media only screen and (min-width: 1px) and (max-width: 767px) {
+.about_collapse{
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+  .about_anyCollapse {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .banner_img {
+ content: url(../../assets/IMG_banner.jpg);
+  }
+
+  .collapse_title {
+    font-size: 12px;
+  }
+ 
+}
