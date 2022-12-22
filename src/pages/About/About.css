@@ -16,6 +16,7 @@
 }  */
 
 .about_anyCollapse {
+  height: 500px;
   margin-right: 200px;
   margin-left: 200px;
   display: flex;
@@ -48,8 +49,10 @@
 }
 
 
+
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /* MEDIAQUERIES */
+
 
 @media only screen and (min-width: 1px) and (max-width: 767px) {
 .about_collapse{

@@ -19,6 +19,7 @@
   border-radius: 10px;
   position: relative;
   margin-top: 20px;
+  background: linear-gradient( white , rgb(34, 34, 34) 40%);
 }
 
 .card_link {
@@ -31,11 +32,12 @@
   border-radius: 10px;
   border-radius: 10px;
   position: relative;
+  opacity: 0.9;
 }
 
 .card_title {
   font-family: Montserrat;
-  font-weight: 500;
+  font-weight: 900;
   font-size: 18px;
   color: #ffffff;
   position: absolute;
@@ -43,6 +45,10 @@
   bottom: 5px;
   position: absolute;
 }
+
+
+
+
 
 /* //BANNER */
 
@@ -84,7 +90,15 @@ h1.banner_txt {
 
 
 
+
+
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
 /* MEDIA QUERIES TABLETTES*/
 @media only screen and (min-width: 767px) and (max-width: 988px) {
 
@@ -122,6 +136,7 @@ h1.banner_txt {
     position: relative;
     margin-top: 20px;
     display: flex;
+    background-color: rgb(0, 0, 0);
   }
 
   .card_cover {
@@ -129,6 +144,7 @@ h1.banner_txt {
     border-radius: 10px;
     border-radius: 10px;
     position: relative;
+    opacity: 0.3;
     /* object-fit: cover; */
   }
 

@@ -1,3 +1,4 @@
+
 .collapse_header {
   height: 52px;
   background-color: #ff6060;
@@ -19,29 +20,28 @@
 .collapse_arrow {
   margin-right: 10px;
   height: 26.4px;
-  margin-top: 10px;
 }
 
-#collapse-Description.collapse {
+/* #collapse-Description.collapse {
   background-color: #f6f6f6;
 }
 
 #collapse-Équipements.collapse {
   background-color: #f6f6f6;
-}
+} */
 
 .collapse_description {
-  margin-left: 10px;
+  padding: 5px;
   font-family: Montserrat;
   font-weight: 400;
   font-size: 18px;
   color: #ff6060;
   line-height: 25px;
-  margin-top: 20px;
+  margin-top: -10px;
   background-color: #f6f6f6;
-  list-style: none;;
+  list-style: none;
 }
 
-.collapse_arrow.true{
+.collapse_arrow.false{
   transform: rotate(-180deg)
 }

@@ -30,6 +30,7 @@
   flex-direction: column;
   padding-top: 15px;
 }
+
 .logement_title {
   font-family: Montserrat;
   font-weight: 500;
@@ -71,9 +72,11 @@
 .contact_firstName {
   height: 5px;
 }
+
 .contact.lastName {
   height: 5px;
 }
+
 .contact_profilPicture {
   clip-path: ellipse(50% 50%);
   width: 64px;
@@ -83,7 +86,7 @@
 
 .logement_equipments {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 50px;
   margin-bottom: 20px;
