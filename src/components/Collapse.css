@@ -1,4 +1,3 @@
-
 .collapse_header {
   height: 52px;
   background-color: #ff6060;
@@ -20,6 +19,7 @@
 .collapse_arrow {
   margin-right: 10px;
   height: 26.4px;
+  cursor: pointer;
 }
 
 /* #collapse-Description.collapse {
@@ -42,6 +42,18 @@
   list-style: none;
 }
 
-.collapse_arrow.false{
-  transform: rotate(-180deg)
+.collapse_arrow.false {
+  transform: rotate(-180deg);
+}
+
+/* ************************************************************ */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .collapse_title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .collapse_description {
+    font-size: 14px;
+  }
 }

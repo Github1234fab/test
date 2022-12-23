@@ -3,7 +3,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
   padding: 10px;
   margin-right: 100px;
   margin-left: 100px;
@@ -13,6 +15,7 @@
 }
 
 .card {
+  width: 100%;
   height: 340px;
   width: 340px;
   border-radius: 10px;
@@ -26,6 +29,7 @@
 }
 
 .card_cover {
+  width: 100%;
   height: 340px;
   width: 340px;
   border-radius: 10px;
@@ -80,49 +84,44 @@
   word-wrap: break-word;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES SmartPhone *************************************** */
 
-/* MEDIA QUERIES SMARTPHONE */
-@media screen and (min-width: 300px) and (max-width: 425px) {
-  main {
-    background-color: rgb(255, 255, 255);
-  }
-
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .banner {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 5px;
-    height: 100px;
     margin-top: 20px;
-    display: flex;
+    border-radius: 5px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .banner_visuel {
-    border-radius: 25px;
+    width: 100%;
+    border-radius: 10px;
   }
 
   .banner_img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+    /* object-fit: fill; */
+    background-size: cover;
   }
 
   .banner_txt {
     font-weight: 800;
-    font-size: 17px;
+    font-size: 14px;
   }
 
-  /* **************************** */
+  /* _______________________________________ */
 
   .cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
     background-color: #f6f6f6;
     padding: 0px;
     margin-bottom: 10px;
@@ -144,18 +143,78 @@
   }
 }
 
-/* MEDIA QUERIES TABLETTES */
+/* MEDIA QUERIES Tablette *************************************** */
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
   .cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  justify-content: center;
+  }
+
+  .card {
+    border-radius: 10px;
+    position: relative;
+    margin-top: 0px;
+    margin-top: 20px;
+
+  }
+
+  .card_cover {
+    position: relative;
+    opacity: 0.9;
+    object-fit: cover;
+  }
+
+  .card_title {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    padding: 10px;
+    bottom: 5px;
+    position: absolute;
+  }
+
+  /* _______________________________________ */
+
+  .banner_visuel {
+    border-radius: 10px;
+  }
+
+  .banner_img {
+    /* object-fit: fill; */
+    background-size: cover;
+  }
+
+  .banner_txt {
+    font-weight: 800;
+    font-size: 35px;
+  }
+}
+
+/* MEDIA QUERIES ordinateurs *************************************** */
+
+@media only screen and (min-width: 1024px) and (max-width: 1840px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-color: #ffffff;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: #f6f6f6;
     border-radius: 10px;
     gap: 30px;
     margin-bottom: 20px;
@@ -163,10 +222,10 @@
   }
 
   .card {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 10px;
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   .card_cover {
@@ -185,82 +244,12 @@
     padding: 10px;
     bottom: 5px;
     position: absolute;
-  }
-
-  /* ****************************** */
-
-  .banner {
-    margin-left: 10px;
-    margin-right: 10px;
-    /* height: 100px; */
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .banner_visuel {
-    border-radius: 15px;
-  }
-
-  .banner_img {
-    /* width: 100%; */
-    /* height: 100px; */
-    /* object-fit: cover; */
-    border-radius: 15px;
-  }
-
-  .banner_txt {
-    font-weight: 600;
-    font-size: 18px;
   }
 }
 
-/* MEDIA QUERIES ORDI PORTABLE*/
-/* @media only screen and (min-width: 768px) and (max-width: 1440px) {
-  .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-right: 100px;
-    margin-left: 100px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    gap: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  } */
+/* _______________________________________ */
 
-  /* .card {
-
-    border-radius: 10px;
-    position: relative;
-    margin-top: 0px;
-  }
-
-  .card_cover {
-
-    position: relative;
-    opacity: 0.9;
-    object-fit: cover;
-  }
-
-  .card_title {
-    font-family: Montserrat;
-    font-weight: 900;
-    font-size: 18px;
-    color: #ffffff;
-    position: absolute;
-    padding: 10px;
-    bottom: 5px;
-    position: absolute;
-  }  */
-
-  /* ****************************** */
-
-  /* .banner {
+/* .banner {
     margin-left: 10px;
     margin-right: 10px;
     height: 100px;

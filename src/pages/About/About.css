@@ -65,7 +65,7 @@
     margin-left: 100px;
   }
   .banner_img {
- content: url(../../assets/IMG_banner.jpg);
+background-size: cover;
   }
 
   .collapse_title {

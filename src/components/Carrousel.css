@@ -6,7 +6,7 @@
   height: 79.2px;
   position: absolute;
   cursor: pointer;
-  left: 13px;
+  left: 20px;
   top: 44%;
 }
 
@@ -26,4 +26,16 @@
   position: absolute;
   bottom: 20px;
 }
-/* image position relative et les arrows en absolute */
+
+
+/* ************************************************************ */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  
+  .carrousel_arrowLeft {
+    font-size: 15px;
+  }
+  
+  .carrousel_arrowRight {
+    height: 30px; 
+  }
+}
