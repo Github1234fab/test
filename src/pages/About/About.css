@@ -22,15 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- justify-content: baseline;
+  justify-content: baseline;
 }
 
-.collapse{
- width: 100%;
- margin-top: 20px;
- margin-bottom: 20px;
+.collapse {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 
 #collapse-Fiabilité.collapse {
   background-color: #f6f6f6;
@@ -38,7 +37,7 @@
 
 #collapse-Respect.collapse {
   background-color: #f6f6f6;
-} 
+}
 
 #collapse-Service.collapse {
   background-color: #f6f6f6;
@@ -48,28 +47,23 @@
   background-color: #f6f6f6;
 }
 
-
-
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /* MEDIAQUERIES */
 
-
 @media only screen and (min-width: 1px) and (max-width: 767px) {
-.about_collapse{
-  margin-right: 100px;
-  margin-left: 100px;
-
-}
+  .about_collapse {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
   .about_anyCollapse {
     margin-right: 100px;
     margin-left: 100px;
   }
   .banner_img {
-background-size: cover;
+    background-size: cover;
   }
 
   .collapse_title {
     font-size: 12px;
   }
- 
 }
