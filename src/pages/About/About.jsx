@@ -20,8 +20,6 @@ const About = () => {
           <Collapse className='about_collapseTxt2' description={txt2} titre={title2} />
           <Collapse className='about_collapseTxt3' description={txt3} titre={title3} />
           <Collapse className='about_collapseTxt4' description={txt4} titre={title4} /> 
-         
-         
         </div>
       </div>
     </>

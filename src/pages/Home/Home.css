@@ -1,22 +1,21 @@
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 40px;
-    background-color: #f6f6f6;
-    border-radius: 10px;
-    gap: 30px;
-    padding: 30px 30px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  gap: 30px;
+  padding: 30px 30px;
+}
 
 .card_visuel {
   height: 340px;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 10px;
   margin-top: 20px;
   background: linear-gradient(white, rgb(34, 34, 34) 40%);
- 
 }
 
 .card_link {
@@ -50,91 +49,69 @@
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 40px;
-  border-radius: 25px;
   margin-top: 50px;
+  border-radius: 15px;
+  background-color: blue;
+  overflow: hidden;
 }
 
 .banner_visuel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: black;
-  border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner_img {
   opacity: 0.8;
-  position: relative;
+  overflow: visible;
 }
 
 .banner_txt {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   position: absolute;
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 500;
   font-size: 48px;
-  word-wrap: break-word;
 }
-
 
 /* MEDIA QUERIES SmartPhone *************************************** */
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .banner {
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 40px;
-    border-radius: 5px;
-  }
-
-  .banner_visuel {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .banner_img {
-    object-fit: cover;
   }
 
   .banner_txt {
     font-weight: 800;
-    font-size: 14px;
+    font-size: 18px;
+    box-sizing: border-box;
   }
 
   /* _______________________________________ */
 
   .cards {
-    display: grid;
     grid-template-columns: (1fr, 1fr);
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 40px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
     justify-content: center;
+    background-color: #ffffff;
   }
 }
 
 .card_title {
   font-family: Montserrat;
   font-weight: 900;
-  font-size: 12px;
-  color: #ffffff;
-  position: absolute;
-  padding: 10px;
-  bottom: 5px;
-  position: absolute;
+  font-size: 17px;
 }
 
-
-/* MEDIA QUERIES Tablette *************************************** */
+/* MEDIA QUERIES Tablette, ordi portable, écrans jusqu'à 1024px. *************************************** */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
   .card_title {
     font-family: Montserrat;
     font-weight: 900;
@@ -146,21 +123,23 @@
     position: absolute;
   }
 
-  /* _______________________________________ */
-
-  .banner_visuel {
-    border-radius: 10px;
+  .cards {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
-  .banner_img {
-    background-size: cover;
+  /* _______________________________________ */
+
+  .banner {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .banner_txt {
     font-weight: 800;
-    font-size: 35px;
+    font-size: 28px;
+    box-sizing: border-box;
   }
 }
-
-
-

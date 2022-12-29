@@ -2,23 +2,34 @@
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 40px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
+
 
 .banner_img {
   width: 100%;
-  border-radius: 25px;
+  border-radius: 15px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
-/* .about_collapses {
+.banner_imgPanorama{
+  content-visibility:hidden ;
+}
+
+ .about_collapses {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
   margin-right: 100px;
   margin-left: 100px;
-}  */
+}  
 
 .about_anyCollapse {
-  height: 500px;
-  margin-right: 200px;
-  margin-left: 200px;
+  width: 80%;
+  height: 620px;
+  margin-right: 10px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,20 +61,44 @@
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /* MEDIAQUERIES */
 
+
 @media only screen and (min-width: 1px) and (max-width: 767px) {
-  .about_collapse {
+
+   .about_collapse {
     margin-right: 100px;
     margin-left: 100px;
   }
-  .about_anyCollapse {
-    margin-right: 100px;
-    margin-left: 100px;
+ 
+  .banner2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    border: solid 2px red;
   }
+
   .banner_img {
-    background-size: cover;
+    width: 100%;
+    border-radius: 15px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
   }
+
+  .banner_imgPanorama{
+    width: 100%;
+    border-radius: 15px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  } 
 
   .collapse_title {
     font-size: 12px;
   }
-}
+
+  .about_anyCollapse {
+    height: 600px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+} 
