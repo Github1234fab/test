@@ -127,6 +127,17 @@
 
 /* ************************************************************ */
 @media screen and (min-width: 320px) and (max-width: 768px) {
+
+
+  .container_logement {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+
   .logement_contact {
     display: flex;
     flex-direction: row;
@@ -187,4 +198,15 @@
   .logement_equipments > .collapse {
     width: 100%;
   }
+
+  .carrousel_image {
+    overflow: hidden;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  
+  }
+
 }

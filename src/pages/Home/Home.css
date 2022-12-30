@@ -51,7 +51,6 @@
   margin-top: 40px;
   margin-top: 50px;
   border-radius: 15px;
-  background-color: blue;
   overflow: hidden;
 }
 
@@ -61,11 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .banner_img {
   opacity: 0.8;
-  overflow: visible;
+  height: 100%;
+  object-fit: cover;
 }
 
 .banner_txt {
@@ -80,9 +81,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .banner {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 8px;
+    margin-right: 8px;
     margin-top: 40px;
+    height: 120px;
   }
 
   .banner_txt {
@@ -124,15 +126,15 @@
   }
 
   .cards {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   /* _______________________________________ */
 
   .banner {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 40px;
     margin-top: 50px;
   }
@@ -142,4 +144,7 @@
     font-size: 28px;
     box-sizing: border-box;
   }
+
+
+  
 }
