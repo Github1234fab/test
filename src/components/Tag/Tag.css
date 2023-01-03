@@ -32,4 +32,10 @@ display: flex;
       padding: 10px;
     }
 
+
+  .tag  {
+    height: 40px;
+  }
+
+
   }

@@ -5,7 +5,6 @@
   border-radius: 15px;
 }
 
-
 .banner_img {
   width: 100%;
   border-radius: 15px;
@@ -13,17 +12,13 @@
   overflow: clip;
 }
 
-.banner_imgPanorama{
-  content-visibility:hidden ;
-}
-
- .about_collapses {
+.about_collapses {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   margin-right: 100px;
   margin-left: 100px;
-}  
+}
 
 .about_anyCollapse {
   width: 80%;
@@ -61,35 +56,27 @@
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /* MEDIAQUERIES */
 
-
 @media only screen and (min-width: 1px) and (max-width: 767px) {
-
-   .about_collapse {
-    margin-right: 100px;
-    margin-left: 100px;
+  .about_collapses {
+    margin-right: -28px;
+    margin-left: -28px;
   }
- 
+
   .banner2 {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
     border-radius: 15px;
-    border: solid 2px red;
+    height: 200px;
   }
 
   .banner_img {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    /* overflow-clip-margin: content-box;
+    overflow: contain; */
   }
-
-  .banner_imgPanorama{
-    width: 100%;
-    border-radius: 15px;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-  } 
 
   .collapse_title {
     font-size: 12px;
@@ -97,8 +84,7 @@
 
   .about_anyCollapse {
     height: 600px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
-  
-} 
+}
