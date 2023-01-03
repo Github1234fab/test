@@ -118,13 +118,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ************************************************************ */
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
@@ -188,7 +181,6 @@
   .logement_equipments {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     gap: 0px;
     margin-bottom: 0px;

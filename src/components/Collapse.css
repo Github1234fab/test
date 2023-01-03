@@ -59,9 +59,7 @@
 
   .collapse_arrow > img {
     margin-right: 10px;
- height: 12px;
+    height: 12px;
     cursor: pointer;
   }
-  
-
 }

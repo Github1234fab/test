@@ -58,13 +58,34 @@
 
 @media only screen and (min-width: 1px) and (max-width: 767px) {
   .about_collapses {
-    margin-right: -28px;
-    margin-left: -28px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .collapse_title {
+    font-size: 12px;
+  }
+
+  .collapse_description {
+    font-size: 13px;
+  }
+
+  .about_anyCollapse {
+    width: 100%;
+    height: 800px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .collapse_arrow > img {
+    margin-right: 10px;
+    height: 10px;
+    cursor: pointer;
   }
 
   .banner2 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 40px;
     border-radius: 15px;
     height: 200px;
@@ -73,18 +94,6 @@
   .banner_img {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-    /* overflow-clip-margin: content-box;
-    overflow: contain; */
-  }
-
-  .collapse_title {
-    font-size: 12px;
-  }
-
-  .about_anyCollapse {
-    height: 600px;
-    margin-right: 0px;
-    margin-left: 0px;
+    border-radius: 15px 
   }
 }

@@ -54,7 +54,6 @@
 }
 
 .banner_visuel {
-  /* background-color: black; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -63,10 +62,9 @@
 }
 
 .banner_img {
-  /* opacity: 0.8; */
   height: 100%;
   object-fit: cover;
- filter: brightness(80%)
+  filter: brightness(80%);
 }
 
 .banner_txt {
@@ -91,6 +89,7 @@
     font-weight: 800;
     font-size: 18px;
     box-sizing: border-box;
+    margin-left: 5px;
   }
 
   /* _______________________________________ */
@@ -104,8 +103,6 @@
     background-color: #ffffff;
     justify-content: space-between;
   }
-
-
 }
 
 .card_title {
@@ -131,9 +128,8 @@
   .cards {
     margin-right: 25px;
     margin-left: 25px;
-  background-color: #f6f6f6;
-  margin-top: 20px;
-
+    background-color: #f6f6f6;
+    margin-top: 20px;
   }
 
   /* _______________________________________ */
@@ -150,7 +146,4 @@
     font-size: 28px;
     box-sizing: border-box;
   }
-
-
-  
 }

@@ -1,14 +1,12 @@
- .starSize{
-    font-size: 30px;
-    margin-left: 10px;
+.starSize {
+  font-size: 30px;
+  margin-left: 10px;
 }
-
 
 /* ************************************************************ */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    .starSize{
-        font-size: 15px;
-        margin-left: 10px;
-    }
-
+  .starSize {
+    font-size: 15px;
+    margin-left: 10px;
+  }
 }

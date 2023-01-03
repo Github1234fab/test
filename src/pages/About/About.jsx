@@ -4,7 +4,7 @@ import Banner2 from '../../components/Banner2';
 import Collapse from '../../components/Collapse';
 import AboutData from "../../data/AboutData.json"
 
-const About = () =>{
+const About = () => {
   return (
     <>
       <div>
@@ -12,7 +12,7 @@ const About = () =>{
       </div>
       <div className='about_collapses'>
         <div className='about_anyCollapse'>
-        {AboutData.map((data) => (<Collapse description={data.content} titre ={data.title} />))}
+          {AboutData.map((data) => (<Collapse description={data.content} titre={data.title} />))}
         </div>
       </div>
     </>

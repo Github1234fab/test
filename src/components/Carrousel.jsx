@@ -5,28 +5,28 @@ import arrowLeft from "../assets/arrowLeft.svg";
 import "./Carrousel.css";
 
 
-const Carrousel = ({images}) => {
-    const [currentImage, setCurrentImage] = useState(0);
-    const arrayLength = images.length;
-    const nextImage = () =>{
-        setCurrentImage(currentImage===arrayLength-1?0:currentImage+1)
-    }
-    const prevImage = () =>{
-        setCurrentImage(currentImage===0?arrayLength-1:currentImage-1)
-    }
+const Carrousel = ({ images }) => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const arrayLength = images.length;
+  const nextImage = () => {
+    setCurrentImage(currentImage === arrayLength - 1 ? 0 : currentImage + 1)
+  }
+  const prevImage = () => {
+    setCurrentImage(currentImage === 0 ? arrayLength - 1 : currentImage - 1)
+  }
 
-    // currentImage, c'est là ou je me trouve (index).
-    // si onCLick=prevImage, on récupère la position actuelle dans le carrousel. 
-    // Si on est positionné sur la première image, on se retrouve sur la dernière image.
-    // sinon on décrémente d'un.
+  // currentImage, c'est là ou je me trouve (index).
+  // si onCLick=prevImage, on récupère la position actuelle dans le carrousel. 
+  // Si on est positionné sur la première image, on se retrouve sur la dernière image.
+  // sinon on décrémente d'un.
 
-    // si on click=nextImage, on récupère la position actuelle dans le carrousel.
-    // Si on est positionné sur la dernirèe image, on se retrouvera sur la première image.
-    // sinon, on incrémente de un.
+  // si on click=nextImage, on récupère la position actuelle dans le carrousel.
+  // Si on est positionné sur la dernirèe image, on se retrouvera sur la première image.
+  // sinon, on incrémente de un.
 
-    return (
-        <div>
-            {images.map(
+  return (
+    <div>
+      {images.map(
         (image, index) =>
           currentImage === index && (
             <div key={image} className="carrousel_image">
@@ -48,8 +48,8 @@ const Carrousel = ({images}) => {
           )
       )}
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Carrousel;

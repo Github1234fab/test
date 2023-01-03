@@ -18,7 +18,7 @@ function Logement() {
     const { id } = useParams();
     const logement = DataLogements.find((logement) => logement.id === id);
     // console.log({logement});
-    if(!logement){ return <Navigate to = "/404" />};
+    if (!logement) { return <Navigate to="/404" /> };
 
     const { pictures, description, equipments, title, location, tags, host, rating } = logement;
     const listeEquipments = equipments.map((equipment, index) => {
