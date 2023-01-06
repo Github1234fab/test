@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Card() {
     return (
-        <div className='cards'>
+        <section className='cards'>
             {/* //fabrication des cartes itération */}
             {
                 Data.map((appartement) => {
@@ -17,18 +17,18 @@ function Card() {
                     //destructuring:
                     const { cover, title, id } = appartement;
                     return (
-                        <div className='article' key={id} >
+                        <article className='card' key={id} >
                             <div className='card_visuel'>
                                 <Link to={"logements/" + id} className="card_link">
                                     <img className='card_cover' src={cover} alt={title} />
                                     <h2 className="card_title">{title}</h2>
                                 </Link>
                             </div>
-                        </div>
+                        </article>
                     )
                 })
             }
-        </div>
+        </section>
     );
 };
 

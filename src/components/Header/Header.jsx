@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="nav">
+    <header className="head">
       <NavLink to="/">
-        <img src={Logo} alt="Logo Kasa Header" className="nav_img" />
+        <img src={Logo} alt="Logo Kasa Header" className="head_img" />
       </NavLink>
-      <div className='header_navigation'>
+      <nav className='head_navigation'>
         <NavLink
           className={({ isActive }) =>
             isActive ? "nav_link active" : "nav_link"
@@ -27,8 +27,8 @@ function Header() {
         >
           À Propos
         </NavLink>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
 

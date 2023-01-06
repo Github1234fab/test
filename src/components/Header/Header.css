@@ -1,4 +1,4 @@
-.nav {
+.head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
   text-decoration: underline;
 }
 
-.header_navigation {
+.head_navigation {
   display: flex;
   justify-content: space-between;
 }
@@ -36,10 +36,10 @@
     margin-left: 0px;
     text-transform: uppercase;
   }
-  .nav_img {
+  .head_img {
     height: 30px;
   }
-  .nav {
+  .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,10 +57,10 @@
     margin-left: 0px;
     text-transform: uppercase;
   }
-  .nav_img {
+  .head_img {
     height: 30px;
   }
-  .nav {
+  .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,16 +70,4 @@
   }
 }
 
-/* MEDIA QUERIES ORDI PORTABLE*/
-/* @media only screen and (min-width: 768px) and (max-width: 1440px)
-  {
-  
-  
-  } */
 
-/* MEDIA QUERIES ORDI PORTABLE*/
-/* @media only screen and (min-width: 1440px) and (max-width: 2800px)
-  {
-  
-  
-  } */
