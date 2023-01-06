@@ -13,7 +13,6 @@ const Contact = ({ host }) => {
                 <p className='contact_lastName'>{lastName}</p>
             </div>
             <img src={picture} alt="Profil" className="contact_profilPicture" />
-
         </div>
     );
 };

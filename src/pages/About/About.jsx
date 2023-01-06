@@ -12,7 +12,11 @@ const About = () => {
       </div>
       <div className='about_collapses'>
         <div className='about_anyCollapse'>
-          {AboutData.map((data) => (<Collapse description={data.content} titre={data.title} />))}
+          {/* {AboutData.map((data) => (<Collapse description={data.content} titre={data.title} />))} */}
+          {AboutData.map(({ id, title, content }) => (
+            <Collapse key={id} description={content} titre={title} />
+          ))}
+
         </div>
       </div>
     </>
@@ -20,3 +24,5 @@ const About = () => {
 };
 
 export default About;
+
+

@@ -21,7 +21,7 @@ const Carrousel = ({ images }) => {
   // sinon on décrémente d'un.
 
   // si on click=nextImage, on récupère la position actuelle dans le carrousel.
-  // Si on est positionné sur la dernirèe image, on se retrouvera sur la première image.
+  // Si on est positionné sur la dernière image, on se retrouvera sur la première image.
   // sinon, on incrémente de un.
 
   return (

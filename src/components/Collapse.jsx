@@ -8,9 +8,9 @@ const Collapse = ({ titre, description }) => {
         setOpen(open === true ? false : true)
     }
     return (
-        <div className='collapse' id={`collapse-${titre}`}>
-            <div className='collapse_header'>
-                <div className='collapse_title'>{titre}</div>
+        <div className="collapse" key={`collapse-${titre}`}>
+            <div className="collapse_header">
+                <div className="collapse_title">{titre}</div>
                 <span className={`collapse_arrow ${open}`}
                     onClick={arrowClick}>
                     <img src={arrowCollapse} alt="Ouvrir ou fermer le contenu" />
