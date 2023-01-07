@@ -33,7 +33,7 @@ function Logement() {
     ));
 
     return (
-        <>
+        <div className = "Logement_page">
             <div className='container_logement'>
                 <Carrousel images={pictures} />
                 <div className='logement_informations'>
@@ -64,7 +64,7 @@ function Logement() {
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

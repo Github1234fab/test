@@ -1,3 +1,4 @@
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -49,16 +50,17 @@
   margin-right: 100px;
   margin-top: 40px;
   border-radius: 15px;
-  overflow: hidden;
+  position: relative;
+  /* overflow: hidden; */
 }
 
-.banner_visuel {
+/* .banner_visuel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-}
+} */
 
 .banner_img {
   height: 100%;
@@ -68,11 +70,21 @@
 }
 
 .banner_txt {
+  top: 0;
   position: absolute;
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 800;
   font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  box-sizing: border-box;
+  line-height: 68px;
+  width: 100%;
+  height: 100%;
+ 
 }
 
 
@@ -80,10 +92,10 @@
 
 
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .banner {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 40px;
     height: 130px;
   }
@@ -93,36 +105,40 @@
     font-size: 18px;
     box-sizing: border-box;
     padding: 15px;
+    justify-content: flex-start;
+    line-height: 25px;
   }
 
   .banner_img {
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     filter: brightness(80%);
-    width: 100%;
+    /* width: 100%; */
   }
 
-  .banner_visuel {
+  /* .banner_visuel {
     width: 100%;
-  }
+  } */
 
   /* _______________________________________ */
 
   .cards {
-    grid-template-columns: (1fr, 1fr);
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    padding: 0;
+    gap: 20px;
   }
-}
 
 .card_title {
   font-family: Montserrat;
   font-weight: 900;
   font-size: 17px;
+}
 }
 
 /* MEDIA QUERIES Tablette, ordi portable, écrans jusqu'à 1024px. *************************************** */
