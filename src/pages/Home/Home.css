@@ -51,16 +51,7 @@
   margin-top: 40px;
   border-radius: 15px;
   position: relative;
-  /* overflow: hidden; */
 }
-
-/* .banner_visuel {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-} */
 
 .banner_img {
   height: 100%;
@@ -111,19 +102,13 @@
 
   .banner_img {
     height: 100%;
-    /* object-fit: cover; */
     filter: brightness(80%);
-    /* width: 100%; */
   }
-
-  /* .banner_visuel {
-    width: 100%;
-  } */
 
   /* _______________________________________ */
 
   .cards {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
